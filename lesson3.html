@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>  
+      <link rel="stylesheet" href="lesson3.css">
+      <title>電卓</title>
+    </head>
+ 
+    <body>
+      <table id="calc">
+        <tr>
+          <td colspan="4">
+            <input id="result" type="text" readonly value="0" disabled/>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="button" value="7" onclick="clickDisplayNum(this)"></td>
+          <td><input type="button" value="8" onclick="clickDisplayNum(this)"></td>
+          <td><input type="button" value="9" onclick="clickDisplayNum(this)"></td>
+          <td><input type="button" class="operator" value="+" onclick="clickDisplayOpe(this)"></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="4" onclick="clickDisplayNum(this)"></td>
+          <td><input type="button" value="5" onclick="clickDisplayNum(this)"></td>
+          <td><input type="button" value="6" onclick="clickDisplayNum(this)"></td>
+          <td><input type="button" class="operator" value="-" onclick="clickDisplayOpe(this)"></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="1" onclick="clickDisplayNum(this)"></td>
+          <td><input type="button" value="2" onclick="clickDisplayNum(this)"></td>
+          <td><input type="button" value="3" onclick="clickDisplayNum(this)"></td>
+          <td><input type="button" class="operator" value="*" name="multiButton" onclick="clickDisplayOpe(this)"></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="0" onclick="clickDisplayNum(this)"></td>
+          <td><input type="button" value="00" onclick="clickDisplayNum(this)"></td>
+          <td><input type="button" value="." onclick="clickDisplayOpe(this)"></td>
+          <td><input type="button" class="operator" value="/" name="divButton" onclick="clickDisplayOpe(this)"></td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="button" value="AC" onclick="clickDisplayAC()"></td>
+          <td colspan="2"><input type="button" class="equal" value="=" onclick="clickDisplayEqual()"></td>
+        </tr>
+      </table>
+ 
+      <script type="text/javascript" src="lesson3.js" charset="utf-8"></script>
+    </body>
+  </html>
